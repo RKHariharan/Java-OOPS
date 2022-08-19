@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Starpattern {
     public static void main(String[] args) {
           Scanner in=new Scanner(System.in);
-       System.out.println("enter the no. of words:");
+       System.out.println("enter the no. of rows:");
        int n=in.nextInt();
        for(int i=0;i<n;i++)
 	{
