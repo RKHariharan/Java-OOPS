@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class electricitybill {
     public static void main(String[] args)
     {
-        
+        details obj=new details();
+        obj.getdetails();
+        obj.display();
     }
 }
 class details
@@ -15,6 +17,7 @@ class details
   int prev;
   int cru;
   String type;
+  int tot;
   void getdetails()
   {
       Scanner obj=new Scanner(System.in);
@@ -28,12 +31,14 @@ class details
       cru=obj.nextInt();
       System.out.println("Enter type:");
       type=obj.next();
+      tot=prev+cru;
   }
   void display()
   {
       System.out.println("Id: "+con_no);
       System.out.println("Name: "+con_name);
-      System.out.println("Total unit consumed: "+prev+cru);
+      System.out.println("Total unit consumed: "+tot);
+      System.out.println("Type: "+type);
       
   }
 }
