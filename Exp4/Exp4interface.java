@@ -1,12 +1,5 @@
 
 import java.util.Scanner;
-
-/*Create an interface Resizable that has a method resize which resizes the shape by a factor 
-x.  Create  a  class  rectangle  that  implements  resizable  and  has  methods  to  print  the  area 
-and perimeter of rectangle. Create a main method which creates the rectangle object with 
-length  =10  breadth=5,  print  the  area  and  perimeter.  Resize  the  rectangle  by  5  then  print 
-the  area  and  perimeter.  Create  another  class  Circle  which  has  methods  to  print  area  and 
-perimeter. Resize the circle by 10 then print the area and perimeter*/
 public class Exp4interface {
     public static void main(String[] args) {
         Scanner obj0=new Scanner(System.in);
