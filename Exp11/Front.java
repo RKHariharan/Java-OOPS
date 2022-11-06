@@ -1,11 +1,9 @@
-//This is the main Page it will direct you to admin and user page
 package example;
 public class Front extends javax.swing.JFrame {
     public Front() {
         initComponents();
     }
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         label1 = new java.awt.Label();
@@ -43,14 +41,14 @@ public class Front extends javax.swing.JFrame {
         button2.setBounds(280, 290, 130, 50);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
              
                 setVisible(false);
                 User obj=new User();
                 obj.setVisible(true);
-    }//GEN-LAST:event_button1ActionPerformed
+    }
     private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
         
                 setVisible(false);
@@ -58,11 +56,6 @@ public class Front extends javax.swing.JFrame {
                 obj.setVisible(true);
     }//GEN-LAST:event_button2ActionPerformed
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -79,18 +72,13 @@ public class Front extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Front.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Front().setVisible(true);
             }
         });
     }
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button button1;
     private java.awt.Button button2;
     private java.awt.Label label1;
-    // End of variables declaration//GEN-END:variables
 }
