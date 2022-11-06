@@ -34,7 +34,6 @@ public class Admin extends javax.swing.JFrame {
         }
     }
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
         popupMenu1 = new java.awt.PopupMenu();
         jLabel1 = new javax.swing.JLabel();
@@ -224,24 +223,22 @@ public class Admin extends javax.swing.JFrame {
         jButton5.setBounds(300, 420, 90, 30);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void t1ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_t1ComponentHidden
 
-    }//GEN-LAST:event_t1ComponentHidden
+    }
 
     private void t1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t1ActionPerformed
 
-    }//GEN-LAST:event_t1ActionPerformed
+    }
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
         setVisible(false);
-        //new jf();
-        //f.setVisible(false);
         Front obj = new Front();
         obj.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) throws ClassNotFoundException {//GEN-FIRST:event_jButton4ActionPerformed
 
@@ -263,8 +260,7 @@ public class Admin extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(Admin.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButton4ActionPerformed
-
+    }
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
         String id = id1.getItemAt(it);
@@ -278,17 +274,17 @@ public class Admin extends javax.swing.JFrame {
         } catch (Exception e) {
             System.out.println(e);
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }
 
     private void id1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_id1ItemStateChanged
 
         it = id1.getSelectedIndex();
-    }//GEN-LAST:event_id1ItemStateChanged
+    }
 
     private void t1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_t1ItemStateChanged
 
         i1 = t1.getSelectedIndex();
-    }//GEN-LAST:event_t1ItemStateChanged
+    }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
@@ -306,12 +302,12 @@ public class Admin extends javax.swing.JFrame {
         } catch (Exception e) {
             System.out.println(e);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
     private void t2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_t2ItemStateChanged
 
         i2 = t2.getSelectedIndex();
-    }//GEN-LAST:event_t2ItemStateChanged
+    }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
@@ -329,14 +325,9 @@ public class Admin extends javax.swing.JFrame {
         } catch (Exception e) {
             System.out.println(e);
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -353,8 +344,6 @@ public class Admin extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -363,7 +352,6 @@ public class Admin extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Author;
     private javax.swing.JTextField Id2;
     private javax.swing.JTextField Price2;
@@ -391,5 +379,4 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> t2;
     private javax.swing.JTextField tf1;
     private javax.swing.JTextField tf2;
-    // End of variables declaration//GEN-END:variables
 }
