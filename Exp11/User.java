@@ -4,10 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.sql.ResultSet;
-
-//import static javaapplication7.DBmain.DB_URL;
-//import static javaapplication7.DBmain.PASS;
-//import static javaapplication7.DBmain.USER;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -56,7 +52,6 @@ public class User extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -121,15 +116,14 @@ public class User extends javax.swing.JFrame {
         jButton1.setBounds(300, 420, 90, 30);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         setVisible(false);
         Front obj=new Front();
         obj.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
     private void jb1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jb1ItemStateChanged
 
         try {
@@ -156,11 +150,6 @@ public class User extends javax.swing.JFrame {
     }//GEN-LAST:event_jb1ItemStateChanged
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -177,9 +166,6 @@ public class User extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new User().setVisible(true);
@@ -187,8 +173,6 @@ public class User extends javax.swing.JFrame {
             }
         });
     }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -198,5 +182,4 @@ public class User extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JComboBox<String> jb1;
-    // End of variables declaration//GEN-END:variables
 }
